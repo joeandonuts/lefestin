@@ -9,6 +9,7 @@
     <meta name="author" content="os cara que te come">
     <title>Le Festin</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="sticky-header">
@@ -22,11 +23,36 @@
             <a href="#">Sobre</a>
         </nav>
     </header>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/teste.jpg" alt="pobre">
+          <div class="slide-text">Carlos Aguiar, 53</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/teste.jpg" alt="pobre">
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/teste.jpg" alt="pobre">
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/teste.jpg" alt="pobre">
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/teste.jpg" alt="pobre">
+        </div>
+        <!-- Add more slides with text as needed -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-    <figure>
+    <!-- <figure>
         <img src="asset/teste.jpg" alt="Description of the image">
         <figcaption>Carlos Aguiar, 53</figcaption>
-    </figure>
+    </figure> -->
+
     <div class="header-container">
         <h3>Projetos</h3>
         <h3>Contatos</h3>
@@ -55,10 +81,33 @@
         <li><a href="https://wa.me/5511974056436&text=Olá">WhatsApp</a></li>
         <li><a href="https://www.instagram.com/hismusicwaselectric/">Instagram</a></li>
     </div>
-    <div class="rowfooter4">
-        <img src="asset/lefestinlogoplaceholder-2.svg" alt="">
-    </div>
+    <div class="logo-container">
+      <img src="asset/lefestinlogoplaceholder-2.svg" alt="Footer Image">
+  </div>
+
 </footer>
-<h2>Copyright © 2024 | Desenvolvido por TM03 - SENAC Santo André</h2>
+<h2>Copyright © 2024 | Desenvolvido pela Beta games Group - SENAC Santo André</h2>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
 </html>
