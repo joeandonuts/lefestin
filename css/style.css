@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
 @import url('swiper-bundle.min.css');
-/*common*/
+/*body common stuff*/
 p {
     font-size: 20px;
 }
@@ -43,20 +43,23 @@ body {
     justify-content:center;
     overflow-x:hidden;
 }
-
+/* header properties */
 .sticky-header {
-    background-color: #593122;
+    background-color: #422a20;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     height: 50px;
-    padding: 20px 0px; 
-    z-index:1000;
+    padding: 20px 0px;
+    z-index: 1000;
     font-size: 14px;
 }
 
+.sticky-header nav {
+    margin-right: 10px;
+}
 
 @media only screen and (max-width: 600px) {
     .sticky-header .navigation {
@@ -66,7 +69,28 @@ body {
     .sticky-header .cta-button {
         display: none;
     }
+
+    .large-logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: inline-block;
+        margin: -10px;
+        margin-top: -25px;
+    }
 }
+
+@media only screen and (min-width: 601px) {
+    .small-logo {
+        display: none;
+    }
+
+    .large-logo {
+        display: inline-block;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .sticky-header {
         font-size: 12px;
@@ -74,10 +98,12 @@ body {
     }
 }
 
+/* logo n navs */
+
 .logo img {
-    height:5vh;
+    height: 4vh;
     padding-left: 20px;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 .nav-links {
@@ -93,6 +119,8 @@ body {
 .nav-links a:hover {
     color: #ffffff;
 }
+
+/* swiper slider */
 
 .swiper {
     display: flex;
@@ -133,6 +161,8 @@ body {
     font-size: 20px; 
 }
 
+/* mockups */
+
 figure {
     display:flex;
     position:relative;
@@ -160,6 +190,9 @@ figcaption {
     padding: 5px;
     font-size: 30px;
 }
+
+/* infos abaixo do slider */
+
 .header-container {
     display: flex;
     align-items: center; /* Center vertically */
@@ -174,7 +207,7 @@ figcaption {
 }
 
 .header-container h3 {
-    margin: 10px;
+    margin: 5px;
     font-size: 18px;
     color: #333; /* Darker text color */
 }
@@ -187,13 +220,16 @@ figcaption {
 .header-container a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+/* strip de criar conta  */
+
 .green-strip {
     display: flex;
     position:absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #273924; 
+    background-color: #242819; 
     width: 450px;
     height: 50vh;
     text-align: center;
@@ -206,7 +242,7 @@ figcaption {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #273924; 
+    background-color: #242819; 
     width: 450px;
     height: 50vh;
     text-align: center;
@@ -242,11 +278,11 @@ figcaption {
 }
 .green-strip h2 {
     font-size: 30px;
-    color:antiquewhite;
+    color:#bfae99;
 }
 .create-account-button {
-    background-color: #593122;
-    color: antiquewhite;
+    background-color: #422a20;
+    color: #bfae99;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -257,13 +293,13 @@ figcaption {
 }
 
 .create-account-button:hover {
-    background-color: #704030; /* You can adjust the hover color if needed */
+    background-color: #593122; /* You can adjust the hover color if needed */
 }
 .text-input {
-    background-color: #273924;
+    background-color: #242819;
     border: none;
     text-align: center;
-    color: antiquewhite;
+    color: #bfae99;
     font-size: 15px;
     overflow:visible;
     font-family: 'Montserrat', sans-serif;
@@ -279,7 +315,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 0fr;
     align-items: center;
-    background-color: #704030;
+    background-color: #422a20;
     color: antiquewhite;
     padding: 20px 10%;
 }
@@ -357,11 +393,11 @@ footer li {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color:#273924;
+    background-color:#242819;
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 14px;
-    color: antiquewhite;
+    color: #bfae99;
     height: 8vh;
     width:100%;
     margin-top: 0px;
