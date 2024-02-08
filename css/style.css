@@ -48,54 +48,13 @@ body {
     background-color: #593122;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 60px;
-    padding: 0 20px;
-    z-index: 1000;
-    font-size: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; 
-}
-
-.sticky-header a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.sticky-header .logo {
-    margin-right: auto;
-    font-weight: bold;
-    color: #fff;
-    font-size: 20px;
-}
-
-.sticky-header .navigation {
-    display: flex;
-    gap: 20px;
-    overflow: hidden; 
-}
-
-.sticky-header .navigation li {
-    list-style: none;
-}
-
-.sticky-header .cta-button {
-    background-color: #fff;
-    color: #593122;
-    padding: 8px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.sticky-header .cta-button:hover {
-    background-color: #e5e5e5;
-    color: #593122;
+    height: 50px;
+    padding: 20px 0px; 
+    z-index:1000;
+    font-size: 14px;
 }
 
 
@@ -139,7 +98,7 @@ body {
     display: flex;
     justify-content: center;
     width: 350px;
-    height: 10%;
+    height: 600px;
     padding: 8% 0;
     top: 100px;
     position: relative;
