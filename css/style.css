@@ -101,9 +101,14 @@ body {
 /* logo n navs */
 
 .logo img {
-    height: 4vh;
+    height: 50px;
     padding-left: 20px;
     padding-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .logo img {
+        height: 30px;
+    }
 }
 
 .nav-links {
